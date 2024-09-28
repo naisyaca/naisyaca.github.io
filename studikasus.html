@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<style media="screen">
+body {
+    background-color: #fec8e8;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.foto {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    padding: 20px;
+}
+
+.sosmed {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-style: bold;
+    line-height: 1px;
+}
+
+.imgcontainer {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.sosmedcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 500px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+
+.date {
+    font-size: 15pt;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="fotocont">
+            <img src="myphoto.jpg" alt="avatar" class="foto" style="align-items: center;">
+        </div>
+        <div class="textcontainer">
+            <h1>Naisya Najmi</h1>
+            <p>1202220010</p>
+        </div>
+        <div class="sosmedcontainer">
+            <a href="https://www.instagram.com/naisya.ca?igsh=Y3dyMjdsdDlxenBq">
+                <img src="ig.png" alt="instagram" class="sosmed">
+            </a>
+            <a href="https://wa.me/082142004434">
+                <img src="wa.png" alt="whatsapp" class="sosmed">
+            </a>
+            <a href="www.linkedin.com/in/naisya-najmi">
+                <img src="linkedin.png" alt="linkedin" class="sosmed">
+            </a>
+        </div>
+        <p id="datetime" class="date"></p>
+    </div>
+</body>
+
+<script>
+    var now = new Date();
+    var datetime = now.toLocaleDateString();
+
+    document.getElementById("datetime").innerHTML = datetime;
+</script>
+
+</html>
+        </div>
+				</div>
+
+</body>
+</html>
